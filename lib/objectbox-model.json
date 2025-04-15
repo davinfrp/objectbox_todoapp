@@ -1,0 +1,74 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:4149356290691389468",
+      "lastPropertyId": "3:4898116023663972496",
+      "name": "Group",
+      "properties": [
+        {
+          "id": "1:8377087734878246378",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:2659957455474895167",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:4898116023663972496",
+          "name": "color",
+          "type": 6
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:828795329523702776",
+      "lastPropertyId": "4:8324663033998411386",
+      "name": "Task",
+      "properties": [
+        {
+          "id": "1:5857642070565733981",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7098943723338691502",
+          "name": "description",
+          "type": 9
+        },
+        {
+          "id": "3:1329602448934994944",
+          "name": "completed",
+          "type": 1
+        },
+        {
+          "id": "4:8324663033998411386",
+          "name": "groupId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "1:7861903120602299167",
+          "relationTarget": "Group"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "2:828795329523702776",
+  "lastIndexId": "1:7861903120602299167",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
