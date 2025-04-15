@@ -87,7 +87,7 @@ class Group {
 ```
 the Group class represents the groupings of tasks. It includes an id, a name string, and a color integer, used for the visual of the groups in the UI. The Group class has a ToMany<Task> collection called tasks, which is annotated with @Backlink(). This tells ObjectBox to automatically populate this list based on the tasks that reference the group from their ToOne relationship. This setup ensures that a single group can contain multiple tasks, effectively creating a one-to-many relationship. Additionally, the Group class provides a helper method, tasksDescription(), which returns a string indicating how many of its tasks are completed out of the total, such as "2 of 5". If the group has no tasks, it returns an empty string.
 
-Then we need to run this command to generate helper files for ObjectBox that defines how these classes are stored in the database
+Then we need to run this command to generate helper files for ObjectBox that defines how these classes are stored in the database. It will create `objectbox.g.dart` and `objectbox-model.json`
 ```dart
 flutter pub run build_runner build
 ```
